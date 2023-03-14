@@ -1,0 +1,63 @@
+class Miembro:
+    def __init__(self, nombre, posicion, voz):
+        self.nombre = nombre
+        self.posicion = posicion
+        self.voz = voz
+        
+    def obtener_nombre(self):
+        return self.nombre
+    
+    def obtener_posicion(self):
+        return self.posicion
+    
+    def obtener_voz(self):
+        return self.voz
+
+
+class RM(Miembro):
+    def __init__(self, nombre, posicion, voz, rap):
+        super().__init__(nombre, posicion, voz)
+        self.rap = rap
+        
+    def obtener_rap(self):
+        return self.rap
+
+
+class Jin(Miembro):
+    def __init__(self, nombre, posicion, voz, visual):
+        super().__init__(nombre, posicion, voz)
+        self.visual = visual
+        
+    def obtener_visual(self):
+        return self.visual
+
+
+class Suga(Miembro):
+    def __init__(self, nombre, posicion, voz, productor):
+        super().__init__(nombre, posicion, voz)
+        self.productor = productor
+        
+    def obtener_productor(self):
+        return self.productor
+rm = RM("RM", "Líder, Rapero Principal", "Barítono", "Rap Monster"))
+print(rm.obtener_nombre(RM))           
+print(rm.obtener_posicion(Lider, Rapero Principal))         
+print(rm.obtener_voz(Baritono))              
+print(rm.obtener_rap(rap Monster))              
+
+jin = Jin("Jin", "Vocalista", "Tenor", "Visual")
+print(jin.obtener_nombre(jin))          
+print(jin.obtener_posicion(Vocalista))        
+print(jin.obtener_voz(Tenor))            
+print(jin.obtener_visual(Visual))         
+
+suga = Suga("Suga", "Rapero Principal", "Barítono", "Productor Musical")
+print(suga.obtener_nombre(Suga))         
+print(suga.obtener_posicion(Rapero Principal))       
+print(suga.obtener_voz(Baritono))            
+print(suga.obtener_productor(Productor Musical))      
+
+
+
+
+

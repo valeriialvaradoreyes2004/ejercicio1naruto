@@ -1,0 +1,48 @@
+class Personaje:
+    def __init__(self, nombre, aldea, habilidad_principal):
+        self.nombre = nombre
+        self.aldea = aldea
+        self.habilidad_principal = habilidad_principal
+        
+    def obtener_nombre(self):
+        return self.nombre
+    
+    def obtener_aldea(self):
+        return self.aldea
+    
+    def obtener_habilidad_principal(self):
+        return self.habilidad_principal
+
+
+class Ninja(Personaje):
+    def __init__(self, nombre, aldea, habilidad_principal, rango):
+        super().__init__(nombre, aldea, habilidad_principal)
+        self.rango = rango
+        
+    def obtener_rango(self):
+        return self.rango
+
+
+class Jinchuriki(Personaje):
+    def __init__(self, nombre, aldea, habilidad_principal, bijuu):
+        super().__init__(nombre, aldea, habilidad_principal)
+        self.bijuu = bijuu
+        
+    def obtener_bijuu(self):
+        return self.bijuu
+
+
+class Akatsuki(Personaje):
+    def __init__(self, nombre, aldea, habilidad_principal, miembro):
+        super().__init__(nombre, aldea, habilidad_principal)
+        self.miembro = miembro
+        
+    def obtener_miembro(self):
+        return self.miembro
+
+ninja = Ninja("Naruto", "Konoha", "Kage Bunshin no Jutsu", "Hokage")
+print(ninja.obtener_nombre(Naruto))           
+print(ninja.obtener_aldea(konoha))            
+print(ninja.obtener_habilidad_principal(kage Bunshin no jetsu))    
+print(ninja.obtener_rango(Hokage))            
+
